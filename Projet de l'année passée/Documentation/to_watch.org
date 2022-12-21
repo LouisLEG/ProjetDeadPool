@@ -1,0 +1,20 @@
+* Videos
+** Object Detection with Haar Cascades
+https://www.youtube.com/watch?v=oGkxJQ9SB8M
+
+** Camera Calibration 1
+https://www.youtube.com/watch?v=E5kHUs4npX4
+
+** Camera Calibration 2
+https://www.youtube.com/watch?v=3h7wgR5fYik
+
+** Geometric Transformations
+https://www.youtube.com/watch?v=nBB2L419EfI
+
+
+* Code Example
+** Camera Calibration with OpenCV
+https://ichi.pro/fr/calibrage-de-la-camera-opencv-256892930431044
+
+** Calibrate PiCam
+https://learn.sparkfun.com/tutorials/computer-vision-and-projection-mapping-in-python/calibrate-the-camera
