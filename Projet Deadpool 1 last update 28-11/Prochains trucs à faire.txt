@@ -1,0 +1,32 @@
+Rapport réarranger
+Par année ect
+
+Sur Git deux branches, une pour son ordinateur, la 2e Remote 
+Coder sur le pc et quand on arrive à un truc de stable --> commit puis push sur le 2e arbre remote
+
+(Google Collab)
+
+	Checker le code de l'année passée pour reprendre des trucs qui fonctionnent
+	GitLab
+	Détection du tour pour déterminer la surface de jeu
+	Optimiser la détection des billes (Cercle et Couleurs)
+		WHITE  : 255, 255, 255.
+		YELLOW  : 253, 247, 56.
+	Optimiser la détection des poches
+	
+Documentations :
+	
+	https://docs.opencv.org/4.x/d3/de5/tutorial_js_houghcircles.html
+	https://docs.opencv.org/3.4/d9/db0/tutorial_hough_lines.html
+	(Peut-être utile à un moment) teachablemachine.withgoogle.com
+
+Pour l'instant, les programmes qui fonctionnent :
+
+	Test4CircleDetection
+	Test2RemoveBackground
+	Test2ColorDetection
+
+Pour janvier : 
+
+	Evaluation Attitude Au TravailFichier
+	Evaluation Rapport Intermédiaire
