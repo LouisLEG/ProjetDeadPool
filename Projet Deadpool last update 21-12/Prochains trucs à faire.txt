@@ -1,0 +1,75 @@
+Rapport réarranger
+Par année ect
+
+Sur Git deux branches, une pour son ordinateur, la 2e Remote 
+Coder sur le pc et quand on arrive à un truc de stable --> commit puis push sur le 2e arbre remote
+
+(Google Collab)
+
+	Checker le code de l'année passée pour reprendre des trucs qui fonctionnent
+	GitLab
+	Détection du tour pour déterminer la surface de jeu
+	Optimiser la détection des billes (Cercle et Couleurs)
+		WHITE  : 255, 255, 255.
+		YELLOW  : 253, 247, 56.
+	Optimiser la détection des poches
+	
+Documentations :
+	
+	https://docs.opencv.org/4.x/d3/de5/tutorial_js_houghcircles.html
+	https://docs.opencv.org/3.4/d9/db0/tutorial_hough_lines.html
+	(Peut-être utile à un moment) teachablemachine.withgoogle.com
+	https://stackoverflow.com/questions/9860667/writing-robust-color-and-size-invariant-circle-detection-with-opencv-based-on
+	https://stackoverflow.com/questions/25440865/how-to-blend-multiple-images-in-opencv
+	
+
+Pour l'instant, les programmes qui fonctionnent :
+
+	Test4CircleDetection
+	Test2RemoveBackground
+	Test3ColorDetection
+	TestColorAndCircleDetection
+
+Pour janvier : 
+
+	Evaluation Attitude Au Travail 
+	Evaluation Rapport Intermédiaire
+
+Prochains trucs à faire :
+
+	Rapport intermédiaire (23/12/2022)
+	Attitude au travail (23/12/2022 ?)
+	Logiciel détection de lignes fonctionnel
+		-> Calibration de l'image
+	Logiciel Remove background : mettre une autre couleur que du noir 
+	Logiciel détection cercle + couleurs en même temps
+	Modifier les logiciels pour faire la détection à partir de la caméra et non d'une image
+	Comparer avec d'autres projecteurs pour voir lequel pourrait convenir + Raspberry Pi
+
+	Modifier les logiciels pour faire la détection à partir de la caméra et non d'une image
+OK	Logiciel détection cercle + couleurs en même temps
+	Logiciel détection de lignes fonctionnel
+		-> Calibration de l'image	
+	Logiciel Remove background : mettre une autre couleur que du noir 
+	Détermination taille billes (Color Detection suivi de Circle Detection [conditions spécifiques])
+	Recalcul du cercle 
+	Rappel des positions (réduction des calculs) 
+	YOLO V3
+
+Objectif :
+
+Cadrage de la zone de jeu (camera + line detection)
+Calibration de la zone de jeu (line detection + traitement d'image [matrice de changement de repères])
+Détection des trous (sans bille) (Hough Circle Detection)
+Suppresion background (remplir couleur diff du noir) (Substract cv2)
+Détermination taille billes (Color Detection suivi de Circle Detection [conditions spécifiques])
+	(Boucle de jeu)
+	{
+	Méthodes de détection des billes par Couleur/forme (Color Detection suivi de Circle Detection)
+	Recalcul du cercle 
+	Rappel des positions (réduction des calculs) 
+	Programme de jeu (Points à jouer, positions des billes, calcul du score)
+	Vérification mouvement
+	}
+
+	

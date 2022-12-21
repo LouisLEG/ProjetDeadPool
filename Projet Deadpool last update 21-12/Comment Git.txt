@@ -1,0 +1,285 @@
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~
+$ cd C:\Users\Gerome\Documents\Helha\Master 1 2022-2023\Projet MA1
+bash: cd: too many arguments
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~
+$ cd "C:\Users\Gerome\Documents\Helha\Master 1 2022-2023\Projet MA1"
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1
+$ ls
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1
+$ git clone https://gitlab.com/projetsma1/deadpool.git
+Cloning into 'deadpool'...
+remote: Enumerating objects: 43, done.
+remote: Counting objects: 100% (43/43), done.
+remote: Compressing objects: 100% (41/41), done.
+remote: Total 43 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (43/43), 18.54 MiB | 1.98 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1
+$ ls
+deadpool/
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1
+$ cd deadpool/
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ ls
+DP_more_informations.pdf  README.md  assets/  scripts/  startMenuDP.py
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ mkdir test
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ ls
+DP_more_informations.pdf  README.md  assets/  scripts/  startMenuDP.py  test/
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ mkdir test/img
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ ls
+DP_more_informations.pdf  README.md  assets/  scripts/  startMenuDP.py  test/
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ ls test/img/
+Blackball0.png    Blackball1.png  Blackball4.png
+Blackball00.png   Blackball2.png  Blackball5.png
+Blackball000.png  Blackball3.png  TrainingPoints.psd
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git add test/*
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test/img/Blackball0.png
+        new file:   test/img/Blackball00.png
+        new file:   test/img/Blackball000.png
+        new file:   test/img/Blackball1.png
+        new file:   test/img/Blackball2.png
+        new file:   test/img/Blackball3.png
+        new file:   test/img/Blackball4.png
+        new file:   test/img/Blackball5.png
+        new file:   test/img/TrainingPoints.psd
+
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git commit -m "Added test images"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Gerome@DESKTOP-BAKMSRF.(none)')
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$  git config user.email "gerome.dieu@outlook.com"
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$  git config user.name "Gérôme Dieu"
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git commit -m "Added test images"
+[main d51d068] Added test images
+ 9 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test/img/Blackball0.png
+ create mode 100644 test/img/Blackball00.png
+ create mode 100644 test/img/Blackball000.png
+ create mode 100644 test/img/Blackball1.png
+ create mode 100644 test/img/Blackball2.png
+ create mode 100644 test/img/Blackball3.png
+ create mode 100644 test/img/Blackball4.png
+ create mode 100644 test/img/Blackball5.png
+ create mode 100644 test/img/TrainingPoints.psd
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.59 MiB | 1.55 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: GitLab: You are not allowed to push code to protected branches on this project.
+To https://gitlab.com/projetsma1/deadpool.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://gitlab.com/projetsma1/deadpool.git'
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.59 MiB | 1.44 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: GitLab: You are not allowed to push code to protected branches on this project.
+To https://gitlab.com/projetsma1/deadpool.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://gitlab.com/projetsma1/deadpool.git'
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ gi tpush
+bash: gi: command not found
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.59 MiB | 1.31 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: GitLab: You are not allowed to push code to protected branches on this project.
+To https://gitlab.com/projetsma1/deadpool.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://gitlab.com/projetsma1/deadpool.git'
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ ^C
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git fetch
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.59 MiB | 1.57 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: GitLab: You are not allowed to push code to protected branches on this project.
+To https://gitlab.com/projetsma1/deadpool.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://gitlab.com/projetsma1/deadpool.git'
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.59 MiB | 1.50 MiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0
+To https://gitlab.com/projetsma1/deadpool.git
+   dbb3bf7..d51d068  main -> main
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git branch
+* main
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git branch --help
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git branch -h
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --recurse-submodules  recurse through submodules
+    --format <format>     format to use for the output
+
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git branch test
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git branch
+* main
+  test
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git checkout tets
+error: pathspec 'tets' did not match any file(s) known to git
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (main)
+$ git checkout test
+Switched to branch 'test'
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (test)
+$ git branch
+  main
+* test
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (test)
+$ git checkout
+
+Gerome@DESKTOP-BAKMSRF MINGW64 ~/Documents/Helha/Master 1 2022-2023/Projet MA1/deadpool (test)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
